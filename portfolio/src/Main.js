@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     Route,
     NavLink,
@@ -10,33 +10,36 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 import Work from './Work'
+import './CSS/Main.css';
 
 class Main extends React.Component {
    render() {
        return (
         <HashRouter>
-            <div>
-                <div className='navigation'>
+            <div className='main-container'>
+                <div className='navigation '>
                     <div className='nav-logo'>
-                        <NavLink to= '/'>SBA</NavLink>
+                        <NavLink end to= '/'>SBA</NavLink>
                     </div>
                     <ul className='header'>
-                        <li><NavLink to= '/'>Home</NavLink></li>
-                        <li><NavLink to= '/About'>About</NavLink></li>
+                        <li><NavLink end to= '/'>Home</NavLink></li>
+                        <li><NavLink to= '/About' >About</NavLink></li>
                         <li><NavLink to= '/Work'>Work</NavLink></li>
                         <li><NavLink to= '/Contact'>Contact</NavLink></li>                        
                     </ul>
                 </div>
                 <div className='content'>
                         <Routes>
-                            <Route path='/' element={<Home/>}/>
+                            <Route exact path='/'  element={<Home/>}/>
                             <Route path='/About' element={<About/>}/>
                             <Route path='/Work' element={<Work/>}/>
                             <Route path='/Contact' element={<Contact/>}/> 
                         </Routes>
                         
                 </div>
-                <div className='footer'></div>
+                <div className='footer flex-container'>
+                    <p>Designed and built by Stravinsky B Anglade @ August 2022</p>
+                </div>
             
             </div>
         </HashRouter>

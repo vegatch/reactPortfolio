@@ -1,35 +1,20 @@
-import React, { Component } from 'react'
-import {
-    Route,
-    NavLink,
-    HashRouter,
-    Routes
-}
-from "react-router-dom"
+import React from 'react'
+import { NavLink } from "react-router-dom"
+import Profile from "./components/profile"
+
+import './CSS/Home.css';
+
 
 class Home extends React.Component {
    render() {
        return (
-       <div>
-            <div className='left-content'>
-                <div>Picture will be here</div>
-                <div>
-                    <div>
-                        <p>786-247-2127</p>
-                        <p>vegatch1@gmail.com</p>
-                    </div>
-                    <div>
-                        LinkedIn, GitHub, Portfolio
-                    </div>
-
-                </div>
-
-            </div>
+       <div className='main-content'>
+            <Profile/>
             <div className='right-content'>
-                <p>Hello, I am Stravinsky</p>
-                <p>I build custom and scalable web application </p>
-                <p>I am a software engineer who builds web app with passion</p>
-                <p><NavLink to= '/About'>learn more...</NavLink></p>
+                <p className='intro'>Hello, I am Stravinsky</p>
+                <p className='into-detail'>I build custom and scalable web application </p>
+                <p className='intro-end'>I am a Software Developer who builds web app with passion</p>
+                <p className='intro-link'><NavLink to= '/About'>learn more...</NavLink></p>
             </div>
 
        </div>);

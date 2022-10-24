@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Profile from "./components/profile"
 
 class Work extends React.Component {
    render() {
        return (
-       <div>
-            <h1>Page under construction</h1>
+       <div className='main-content'>
+            <Profile/>
+            <div className='right-content'>
+                <h1>Page under construction</h1>
+            </div>
+            
        </div>);
    }
 }
