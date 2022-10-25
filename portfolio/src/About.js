@@ -25,7 +25,7 @@ class About extends React.Component {
                     I am very proficient in JavaScript, CSS, HTML, React, MySql, SRSS, SQL, Node, jQuery and SPSS.
                 </p>
                 <p>
-                    Are you in need a Software Developer? <NavLink to= '/Contact'>Let's talk.</NavLink>
+                    Are you in need of a Software Developer? <NavLink to= '/Contact'><em>Let's talk</em>.</NavLink>
                 </p>
             </div>
             

@@ -11,10 +11,11 @@ class Home extends React.Component {
        <div className='main-content'>
             <Profile/>
             <div className='right-content'>
-                <p className='intro'>Hello, I am Stravinsky</p>
-                <p className='into-detail'>I build custom and scalable web application </p>
-                <p className='intro-end'>I am a Software Developer who builds web app with passion</p>
-                <p className='intro-link'><NavLink to= '/About'>learn more...</NavLink></p>
+                <p className='intro'>Hello there, I am Stravinsky.</p>
+                <p className='into-title'>Front End Web Developer.</p>
+                <p className='into-detail'>I build custom and scalable web application. </p>
+                <p className='intro-end'>I use multiple web technologies to build awesome web app with passion.</p>
+                <button className='intro-link'><NavLink to= '/About'>Learn more</NavLink></button>
             </div>
 
        </div>);

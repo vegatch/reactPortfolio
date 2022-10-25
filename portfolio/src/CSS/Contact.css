@@ -1,0 +1,19 @@
+
+
+form{
+    width:50%;
+}
+form label,
+form input,
+form textarea {
+    width: 98%;
+}
+
+form textarea{
+    height: 20vh;
+}
+form input[type="submit"]{
+    width: 100%;
+    margin-top:2rem
+    
+}
